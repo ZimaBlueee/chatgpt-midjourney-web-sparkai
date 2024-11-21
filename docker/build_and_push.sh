@@ -12,6 +12,8 @@ cd ..
 # 提示用户输入版本号
 read -p "请输入版本号（例如 1.0.0）： " VERSION
 
+git pull
+
 # 定义镜像名称和仓库信息
 ALIYUN_REGISTRY="registry.cn-shanghai.aliyuncs.com"
 NAMESPACE="zimablue"
