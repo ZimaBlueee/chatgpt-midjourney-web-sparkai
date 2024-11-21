@@ -12,6 +12,11 @@ cd ..
 # 提示用户输入版本号
 read -p "请输入版本号（例如 1.0.0）： " VERSION
 
+# 设置并导出代理环境变量
+export HTTP_PROXY="http://192.168.1.26:7890"
+export HTTPS_PROXY="http://192.168.1.26:7890"
+export NO_PROXY="localhost,127.0.0.1"
+
 git pull
 
 # 定义镜像名称和仓库信息
