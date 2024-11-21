@@ -13,7 +13,7 @@ COPY package*.json .
 
 # 安装 pm2 和 pnpm
 RUN npm config set registry https://registry.npmmirror.com
-RUN npm install pm2 pnpm
+RUN npm install -g pm2 pnpm
 
 # 安装项目依赖
 RUN pnpm install
